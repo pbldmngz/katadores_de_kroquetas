@@ -10,6 +10,7 @@ public class Palindrome {
         System.out.println(reverse("abcde"));
     }
     //This method reverses a phrase and return a true/false value
+    //If reversed string (no blanc spaces) equals base string
     public static Boolean reverse (String st)
     {
         st.replaceAll("\\s+","");
@@ -20,6 +21,6 @@ public class Palindrome {
         }
         String string = new String(arr);
         
-        return (st == string);
+        return (st.equals(string));
     }
 }
