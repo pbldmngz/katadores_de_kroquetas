@@ -1,19 +1,37 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package palindrome;
+
+import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
 
 /**
  *
- * @author gadar
+ * @author gadar, pbldmngz
  */
 public class Palindrome {
 
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println(Palindrome("abcde", 0));
     }
     
+/**
+ * Main code
+ * Using recursivity, 
+ * 
+ */
+    public String Palindromo(String string, int control)
+    {
+        String c = "";
+        if (control == string.length)
+        {
+            return "";
+        }
+        else
+        {
+            char l = string.charAt(control);
+            i++;
+            c = Palindromo(string, control);
+            c = c + 1;
+            return c;
+        }
+    }
 }
