@@ -14,8 +14,8 @@ public class Palindrome {
     public static Boolean reverse (String st)
     {
         st = st.replaceAll("\\s+","");
-        char[] arr = new char[st.length];
-        for (int i = st.length-1; i >= 0; i--)
+        char[] arr = new char[st.length()];
+        for (int i = st.length()-1; i >= 0; i--)
         {
             arr[i] = st.charAt(i);
         }
