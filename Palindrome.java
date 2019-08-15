@@ -6,30 +6,20 @@ package palindrome;
  */
 public class Palindrome {
 
-
     public static void main(String[] args) {
-        System.out.println(Palindrome("abcde", 0));
+        System.out.println(reverse("abcde"));
     }
-    
-/**
- * Main code
- * Using recursivity, 
- * 
- */
-    public String Palindromo(String string, int control)
+    //This method reverses a phrase and return a true/false value
+    public static Boolean reverse (String st)
     {
-        String c = "";
-        if (control == string.length)
+        st.replaceAll("\\s+","");
+        char[] arr = new char[st.length];
+        for (int i = st.length-1; i >= 0; i--)
         {
-            return "";
+            arr[i] = st.charAt(i);
         }
-        else
-        {
-            char l = string.charAt(control);
-            i++;
-            c = Palindromo(string, control);
-            c = c + 1;
-            return c;
-        }
+        String string = new String(arr);
+        
+        return (st == string);
     }
 }
