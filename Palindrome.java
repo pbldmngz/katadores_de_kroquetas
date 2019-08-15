@@ -13,7 +13,7 @@ public class Palindrome {
     //If reversed string (no blanc spaces) equals base string
     public static Boolean reverse (String st)
     {
-        st.replaceAll("\\s+","");
+        st = st.replaceAll("\\s+","");
         char[] arr = new char[st.length];
         for (int i = st.length-1; i >= 0; i--)
         {
