@@ -2,7 +2,7 @@ package palindrome;
 
 /**
  *
- * @author gadar, pbldmngz
+ * @author gadar, pbldmngz, mariana
  */
 public class Palindrome {
 
