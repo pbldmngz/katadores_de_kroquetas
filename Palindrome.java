@@ -1,7 +1,5 @@
 package palindrome;
 
-import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
-
 /**
  *
  * @author gadar, pbldmngz
