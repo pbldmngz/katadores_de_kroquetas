@@ -4,24 +4,25 @@ package palindrome;
  *
  * @author gadar, pbldmngz, mariana
  */
+
 public class Palindrome {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        //System.out.println(reverse("abcdeedcba"));
-    }
-    //This method reverses a phrase and return a true/false value
-    //If reversed string (no blanc spaces) equals base string
-    public static Boolean reverse (String st)
-    {
-        char[] arr = new char[st.length()];
-        int r_counter = 0;
-        st = st.replaceAll("\\s+","");
-        for (int i = st.length()-1; i >= 0; i--)
-        {
-            arr[r_counter] = st.charAt(i);
-            r_counter++;
+        
+        char answer = ' ';
+        Scanner a = new Scanner(System.in);
+        System.out.println("Would you like to input a word?  Yes = Y  No = N");
+        answer = a.next().charAt(0);
+        
+        while(answer == 'y' || answer == 'Y') {
+            palin.pal();
+            System.out.println("\nContinue?  Yes = Y  No = N");
+            answer = a.next().charAt(0);
         }
-        String string = new String(arr);
-        return (st.equals(string));
-    }
+        
+        System.out.println("Thanks for playin'");
+    }   
 }
