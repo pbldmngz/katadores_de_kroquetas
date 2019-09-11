@@ -1,4 +1,4 @@
-# group_palindrome
+# kakadores de croquetas
 Group project while using Trello and Github
 ## Work rules
 * Every team member must develop a piece of code
